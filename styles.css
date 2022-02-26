@@ -8,16 +8,16 @@ body {
 .header {
     display:flex;
     justify-content: space-between;
-    padding: 8px;
+    margin:0;
     font-size: 24px;
 
 }
+
 ul {
     list-style:none;
     display:flex;
     flex:1;
-    
-    
+    padding:0;
 }
 
 .left {
@@ -27,7 +27,6 @@ ul {
 .left, .right {
     display:flex;
     gap:16px;
-    padding-right: 200px;
 }
 
 .right {
@@ -39,7 +38,8 @@ ul {
 }
 
 .hero {
-    padding-left:40px;
+    padding-left:200px;
+    padding-bottom: 80px;
     display: flex;
     gap:16px;
     align-items: center;
@@ -55,14 +55,23 @@ button.button1{
     background: #3882F6;
     border: 1px #3882F6;
     color:white;
+    font-size: 16px;
     font-weight: bold;
 }
 img.himg{
     display: flex;
     margin-left: auto;
-    padding-right: 200px;
     margin-bottom: 20px;
 }
+
+img.himg, .right {
+    padding-right:400px;
+}
+
+.left, .hero {
+    padding-left:400px;
+}
+
 .content {
     
     color:#F9FAF8;
@@ -110,13 +119,15 @@ img {
     font-weight:bolder;
     color:#1F2937;
 }
+
 .middle {
-    
     display:flex;
     justify-content: center;
     align-items:center;
     gap:52px;
+    margin-bottom: 80px;
 }
+
 .text {
     color: rgb(59, 59, 59);
 }
@@ -125,4 +136,37 @@ img {
     max-width: 200px;
 }
 
+.quote {
+    background:#E5E7EB;
+    color:#1F2937;
+    font-size: 36px;
+    display:flex;
+    flex-direction: column;
+    font-style:italic;
+    padding: 200px 400px;
+}
 
+.source {
+    font-size: 24px;
+    font-weight:bold;
+    font-style: normal;
+    margin-left:auto;
+}
+
+.call {
+    margin: 100px 360px;
+    padding: 50px 120px;
+    border-radius: 15px;
+    background-color:#3882F6 ;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+}
+
+button.button2 {
+    background-color:#3882F6;
+    border: 1px solid white;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+}
